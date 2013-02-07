@@ -6,13 +6,12 @@
             'number':0
         }, options);
 
-        var image = "";
+        var image = '<img src="https://static.4chan.org/image/title/' + settings.number;
         if (settings.animated) {
-            image = '<img src="https://static.4chan.org/image/title/' + settings.number + '.gif">';
+            image += '.gif">';
         } else {
-            image = '<img src="https://static.4chan.org/image/title/' + settings.number + '.jpg">';
+            image += '.jpg">';
         }
-
 
         this.append(image);
 
