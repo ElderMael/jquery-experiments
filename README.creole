@@ -2,4 +2,4 @@
 
 jQuery plugins practicing and stuff.
 
-All code licenced under LGPL v3 or posterior.
+All code licenced under LGPL v3 or later.
