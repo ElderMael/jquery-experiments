@@ -7,12 +7,20 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
-            $('body').css('background', '#000')
-                    .appendTitleImage()
-                    .appendTitleImage({'animated':true, 'number':1});
+            //Defaults and animated
+            $('#test-one').css('background', '#000')
+                    .appendTitleImage({secure:true})
+                    .appendTitleImage({'type':'gif', 'number':1, secure:true})
+                    .appendTitleImage({'type':'png', 'number':0, secure:true});
+
+            $('#test-two').css('background', '#ccc')
+                    .appendAllTitleImages({'secure':true});
         });
     </script>
 </head>
 <body>
+<div id="test-one"/>
+
+<div id="test-two"/>
 </body>
 </html>
