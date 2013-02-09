@@ -32,12 +32,32 @@
 
         });
 
+        $.ajax('http://localhost:8080/', {
+            'method':'GET',
+            dataType:'json',
+            'success':function (data, textStatus, jqXHR) {
+
+                console.log(data);
+
+                $.jqplot('random-chart', [data.readings]);
+
+            }
+        });
+
+
     </script>
+
+    <style type="text/css">
+        #chartdiv #random-chart {
+            height: 400px;
+            width: 400px;
+        }
+
+    </style>
 </head>
 <body>
 
-<div id="chartdiv" style="height:400px;width:300px; ">
-
-</div>
+<div id="chartdiv"></div>
+<div id="random-chart"></div>
 </body>
 </html>
