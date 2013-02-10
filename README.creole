@@ -1,5 +1,5 @@
 =jQuery experiments=
 
-jQuery plugins practicing and stuff.
+jQuery plugins practicing and stuff. Also some vert.x servers to mock functionality of experimental sensor cards.
 
 All code licenced under LGPL v3 or later.
